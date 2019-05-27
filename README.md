@@ -17,8 +17,8 @@ O problema selecione foi o jokenpo (http://dojopuzzles.com/problemas/exibe/joken
     Embora seja errado para facilitar a execução do programa, 
     a sua versão compilada (jar) foi adicionado ao repositório.
     Sendo assim, para executar o mesmo abra o terminal da sua maquina,
-    vá até a pasta do jar (build/libs) e execute o seguinte comando:
-    `java -jar jokenpo-all-1.0-SNAPSHOT.jar`.
+    vá até a pasta do jar (src/libs) e execute o seguinte comando:
+    `java -jar jokenpo.jar`.
     
     Caso prefira abrir o mesmo dentro de sua IDEA de preferência,
     certifique-se que possui o gradle instalado, pois ele foi usado
