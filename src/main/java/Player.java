@@ -1,13 +1,17 @@
 public class Player {
-    private String name;
     private int action;
 
-    public Player(String name, int action) {
-        this.name = name;
+    public Player() {}
+
+    public Player(int action) {
         this.action = action;
     }
 
     public int getAction() {
         return action;
+    }
+
+    public void setAction(int action) {
+        this.action = action;
     }
 }

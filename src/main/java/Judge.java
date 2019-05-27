@@ -1,18 +1,17 @@
+import static label.Result.*;
+import static label.Action.*;
+
 public class Judge {
 
-    private static final String PLAYER_1_WINNER = "Player 1 won";
-    private static final String PLAYER_2_WINNER = "Player 2 won";
-    private static final String DRAW = "DRAW!!!!";
-
     public String applyRulesToDecideWinner(Player firstPlayer, Player secondPlayer){
-        if(hasPlayersChooseSameAction(firstPlayer, secondPlayer)){
+        if(hasPlayersChooseSameAction(firstPlayer.getAction(), secondPlayer.getAction())){
             return DRAW;
         }
         return decideWinner(firstPlayer, secondPlayer);
     }
 
-    public boolean hasPlayersChooseSameAction(Player firstPlayer, Player secondPlayer){
-        return firstPlayer.getAction() == secondPlayer.getAction();
+    public boolean hasPlayersChooseSameAction(int firstPlayerAction, int secondPlayerAction){
+        return firstPlayerAction == secondPlayerAction;
     }
 
     public String decideWinner(Player firstPlayer, Player secondPlayer){
@@ -31,14 +30,14 @@ public class Judge {
     }
 
     public boolean isPlayerActionPaper(int action) {
-        return action == Actions.PAPER;
+        return action == PAPER;
     }
 
     public boolean isPlayerActionRock(int action) {
-        return action == Actions.ROCK;
+        return action == ROCK;
     }
 
     public boolean isPlayerActionScissors(int action) {
-        return action == Actions.SCISSORS;
+        return action == SCISSORS;
     }
 }
