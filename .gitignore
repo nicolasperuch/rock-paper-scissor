@@ -132,6 +132,7 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 ### Gradle Patch ###
-**/build/
+**/build/classes
+**/build/tmp
 
 # End of https://www.gitignore.io/api/java,gradle,intellij+all
