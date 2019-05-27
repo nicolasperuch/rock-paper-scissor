@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static label.Action.*;
-import static label.Result.*;
+import static label.Message.*;
 
 
 public class JudgeTest {

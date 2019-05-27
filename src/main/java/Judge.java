@@ -1,4 +1,4 @@
-import static label.Result.*;
+import static label.Message.*;
 import static label.Action.*;
 
 public class Judge {
